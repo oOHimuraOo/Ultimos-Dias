@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, 
+section h2,
+section h3,
+form button,
+select,
+header button {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body,
+input,
+textarea {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: lightgray;
+}
+
+header {
+    padding: 16px 0;
+    background-color: black;
+    color: lightgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+h1 {
+    margin-right: auto;
+    font-size: 48px;
+}
+
+header nav li {
+    display: inline;
+    margin: 16px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+header nav select,
+header nav button,
+header nav input,
+header nav label {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+header audio {
+    min-width: 150px;
+    width: 100%;
+    max-width: 150px;
+    margin-left: 16px;
+    mix-blend-mode: difference;
+}
+
+header audio::-webkit-media-controls-current-time-display,
+header audio::-webkit-media-controls-time-remaining-display,
+header audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+header audio::-webkit-media-controls-mute-button, 
+header audio::-webkit-media-controls-panel,
+header audio::-webkit-media-controls-volume-slider-container,
+header audio::-webkit-media-controls-volume-slider {
+    background-color: lightgrey;
+}
+
+.container {
+    max-width: 1920px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.plano-de-fundo {
+    background-color: #1f1c1c;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.plano-de-fundo video {
+    opacity: 3%;
+}
+
+section {
+    position: static;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topo .container {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#topo {
+    margin-top: 4%;
+}
+
+#lastdayslogo {
+    mix-blend-mode: color-dodge;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.separacao-especial {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.separacao-especial p {
+    writing-mode: vertical-lr;
+    font-size: 18px;
+    text-align: center;
+}
+
+.separacao-especial li a {
+    text-decoration: none;
+}
+
+.separacao-especial ul,
+.textoespecial ul,
+#about ul {
+    list-style: none;
+}
+
+.separacao-especial li img {
+    height: 25px;
+    rotate: 90deg;
+    margin-top: 3px;
+}
+
+#separadorespecial {
+    width: auto;
+    height: 25px;
+    margin-left: 8px;
+}
+
+.textoespecial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.textoespecial img {
+    height: 25px;
+    margin-top: 8px;
+    margin-left: 16px;
+    filter: sepia(1);
+}
+
+.separador-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    mix-blend-mode: darken;
+}
+
+#about .container,
+#system .container,
+#characters .container,
+#contact .container {
+    flex-direction: column;
+}
+
+#about img,
+#system img {
+    height: 460px;
+}
+
+#about p,
+#system p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: justify;
+    max-width: 700px;
+}
+
+#about video, 
+#world video {
+    height: 320px;
+    border: 3px solid rgba(75, 0, 0, 255);
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#about h3,
+#system h3,
+#characters h3 {
+    margin: 16px 0;
+}
+
+#about li audio {
+    mix-blend-mode: soft-light;
+}
+
+#about li audio::-webkit-media-controls-panel,
+#about li audio::-webkit-media-controls-mute-button,
+#about li audio::-webkit-media-controls-play-button,
+#about li audio::-webkit-media-controls-timeline-container,
+#about li audio::-webkit-media-controls-current-time-display,
+#about li audio::-webkit-media-controls-time-remaining-display,
+#about li audio::-webkit-media-controls-timeline,
+#about li audio::-webkit-media-controls-volume-slider-container,
+#about li audio::-webkit-media-controls-volume-slider,
+#about li audio::-webkit-media-controls-seek-back-button,
+#about li audio::-webkit-media-controls-seek-forward-button,
+#about li audio::-webkit-media-controls-fullscreen-button,
+#about li audio::-webkit-media-controls-rewind-button,
+#about li audio::-webkit-media-controls-return-to-realtime-button,
+#about li audio::-webkit-media-controls-toggle-closed-captions-button {
+    background-color: lightgrey;
+}
+
+#world .container {
+    align-items: center;
+    justify-content: center;
+}
+
+#world video {
+    margin-right: 16px;
+}
+
+#world p {
+    margin-top: 16px;
+    max-width: 575px;
+    text-align: justify;
+}
+
+#imgpers {
+    height: 640px;
+    margin: 16px 0;
+}
+
+#pers {
+    display: flex;
+    flex-direction: column;
+}
+
+#pers img {
+    height: 360px;
+    margin-right: 16px;
+    transition: transform 0.5s;
+}
+
+#pers img:hover {
+    transform: scale(2);
+}
+
+#textopers {
+    display: flex;
+    max-width: 550px;
+}
+
+#textopers p {
+    margin-top: 16px;
+    text-align: justify;
+}
+
+.contato-metodos {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form button {
+    background-color: rgb(107, 107, 107);
+    color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: lightgray;
+    color: #1f1c1c;
+}
+
+input:focus,
+textarea:focus {
+    outline: rgba(75, 0, 0, 255);
+}
+
+footer {
+    padding: 38px 0;
+    background-color: black;;
+    color: lightgray;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+footer p {
+    text-align: center;
+}
