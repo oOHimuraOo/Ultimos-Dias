@@ -88,3 +88,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - changelog.md
 ### Removed
 - FILE/intro.mp4
+
+## [0.1.3] - 16-03-2024
+## Commit
+- Correção ortografica dos textos printados para o usuario.
+- ajuste de posicionamento do rodapé
+- renomeando o arquivo Index.html para index.html
+- revisão do script main.css e index.html
+
+## changed
+- FILE/index.html
+- FILE/changelog.md
